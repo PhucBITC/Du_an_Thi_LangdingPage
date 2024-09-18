@@ -1,0 +1,598 @@
+*{
+    padding:0 ;
+    margin:0 ; 
+    box-sizing: border-box;
+}
+body {
+    font-family: "Mulish", sans-serif;
+    /* height: 10000px; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    font-family: "Clash Display";    
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    background-color:#FFFFFF;
+    color: 797979;
+}
+
+.header__logo img {
+    width: 40px;
+    height: 40px;
+}
+.header__text{
+    width: 114px;
+    color: #FFFFFF;
+    height: 51px;
+    font-size: 58px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.header__nav-link {
+    text-decoration: none;
+    color: #797979;
+}
+.header__skip-link {
+    text-decoration: none;
+    width: 177px;
+    color:#32313E;
+    height: 47px;
+    text-align: center;
+    line-height: 47px;
+    border: 1px solid #31303A;
+    border-radius: 16px;
+}
+
+/* Hero section styles */
+.hero {
+    background-color:#FFFFFF;
+    text-align: center;
+    padding: 35px;
+    display: flex;
+    
+    justify-content: space-between;
+}
+.hero__img {
+    margin-left:-120px;
+}
+.hero__lear {
+    width: 177px;
+    height: 46px;
+    color:#FFFFFF;
+    margin-bottom: 20px;
+    background-color: #252525;
+    padding:20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+.hero__content-left {
+    display: flex;
+    flex-direction: column;
+    height:254px;
+}
+.hero__content-right {
+    display: flex;
+    background-color: #FFFFFF;
+    left: -250px;
+    bottom: -200px;
+    flex-direction: column;
+    height:254px;
+}
+.hero__box {
+    width: 334px;
+    background-color: #FFFFFF;
+    left: -250px;
+    bottom: -200px;
+    z-index:5;
+    padding:20px;
+    position: relative;
+    border-radius: 14px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.hero__box1 {
+    width: 334px;
+    background-color: #FFFFFF;
+    z-index: 5;
+    left: 730px;
+    bottom: -80px;
+    padding:20px;
+    position: absolute;
+    border-radius: 14px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.hero__img-vector{
+    position: absolute;
+    left: 0;
+    top:10px;
+    z-index: 0;
+}
+.hero__box-text {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+.hero__box-title {
+    color:#252525;
+    font-weight: 700;
+    margin-bottom: 20px;
+    float: left;
+}
+.hero__img-car {
+
+}
+.hero__img-rectange{
+    width: 482px;
+}
+.hero__title {
+    width: 637px;
+    color:#484758;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 72px;
+    float: left;
+    
+}
+.hero__subtitle {
+   float: left;
+   width: 505px;
+   height: 81px;
+   line-height: 1.6;
+   margin-bottom: 20px;
+   text-align: justify  ;
+}
+.hero__images-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.hero__img-rectange {
+    /* Ensure this image is at the bottom layer */
+    position: relative;
+    top:70px;
+    z-index: 1;
+}
+
+.hero__img-car {
+    /* Ensure this image is on top of the other image */
+    
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: 2;
+}
+
+/* percentage */
+.percentage {
+    margin-top:200px;
+    margin-right: 50px;
+}
+.percentage__contain {
+    padding:20px;
+}
+.percentage__title {
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.percentage__list ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.percentage__item {
+    width: 181px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Thêm gạch đứng vào các mục li không phải mục cuối cùng */
+.percentage__item:not(:last-child) {
+    border-right: 2px solid #797979; /* Đường gạch dọc */
+    padding-right: 20px;
+}
+
+.percentage__s {
+    display: block;
+    text-align: left;
+    color: #797979;
+    margin-bottom: 20px;
+}
+
+.discount-badge {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.discount-percentage {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.discount-off {
+    /* Bạn có thể thêm style ở đây nếu cần */
+}
+
+.price {
+    color: #E54561;
+}
+
+.product {
+    margin-top:800px;
+    margin-bottom: 100px;
+}
+.product__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product__title {
+    color:#E54561;
+    font-weight: 700;
+
+}
+.product__infor{
+    width: 731px;
+    padding:55px;
+    font-size: 54px;
+}
+.product__infor span {
+    margin:0 122px;
+    font-size: 54px;
+}
+.product__infor-other {
+    width: 100px;
+    text-align: center;
+}
+
+.product__information{
+    position: relative;
+}
+.product__list{
+    /* background-color: red; */
+}
+.product__img {
+    position: absolute;
+    right:-1px;
+    bottom:-1px;
+}
+.product__list ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.product__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    margin: 0 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product__information-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+    min-height: 50px; /* Đảm bảo chiều cao cố định cho tiêu đề */
+}
+
+.product__text {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+    height:121px;
+    position: relative;
+    z-index: 10;
+    text-align: justify;
+    min-height: 80px; /* Đảm bảo chiều cao cố định cho nội dung văn bản */
+}
+
+.product__information img {
+    max-width: 100px;
+    margin-top: 15px;
+    align-self: center;
+}
+/* store */
+.store {
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:100px;
+    padding: 20px; /* Thêm padding nếu cần thiết */
+}
+
+.store h1 {
+    color: #E54561;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.store__text {
+    color: #FFFFFF;
+    font-size: 54px; /* Đã điều chỉnh kích thước cho phù hợp */
+    margin-bottom: 40px; /* Đã điều chỉnh khoảng cách giữa các phần tử */
+    text-align: center; /* Căn giữa văn bản */
+}
+
+.stories {
+    width: 100%;
+    max-width: 1200px; /* Giới hạn kích thước tối đa */
+    padding: 0 20px; /* Thêm padding cho các bên */
+}
+
+.story {
+    display: flex;
+    align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+    /* background-color: #ffffff; Đặt màu nền trắng cho dễ nhìn */
+    margin-bottom: 20px; /* Thêm khoảng cách giữa các hàng */
+    padding: 20px; /* Thêm padding cho các phần tử bên trong */
+    border-radius: 8px; /* Bo tròn các góc */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng nhẹ */
+}
+
+.story__image {
+    flex: 1; /* Đặt kích thước hình ảnh linh hoạt */
+    margin-right: 20px; /* Thêm khoảng cách bên phải của hình ảnh */
+}
+
+.story__image img {
+    width: 100%; /* Đặt kích thước hình ảnh để nó chiếm toàn bộ chiều rộng của khối */
+    height: auto; /* Giữ tỷ lệ khung hình của hình ảnh */
+    border-radius: 8px; /* Bo tròn các góc của hình ảnh */
+}
+
+.story__text {
+    flex: 2; /* Đặt kích thước văn bản linh hoạt hơn so với hình ảnh */
+}
+
+.text {
+    color: #FFFFFF; /* Đặt màu văn bản */
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các đoạn văn */
+    font-size: 16px; /* Đặt kích thước chữ */
+}
+
+.text__1 {
+    color: #666666; /* Đặt màu văn bản */
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các đoạn văn */
+    font-size: 14px; /* Đặt kích thước chữ */
+}
+
+.text__2 {
+    color: #007BFF; /* Đặt màu văn bản cho liên kết */
+    font-size: 14px; /* Đặt kích thước chữ */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+}
+.stor__btn {
+    /* background-color: #007BFF; */
+    text-align: center;
+    /* width: 100px; */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stor__btn span {
+    margin-top:20px;
+    background-color: #FFFFFF;
+   width: 200px;
+   font-weight: 700;
+   height: 50px;
+   line-height: 50px;
+   border-radius: 10px;
+   border: 1px solid #32313E;
+  
+}
+/*  */
+/* Định dạng cho toàn bộ khối support */
+.support {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+/* Định dạng cho phần tiêu đề */
+.header-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-section h1 {
+    font-size: 24px;
+    color: #E54561;
+    margin: 0;
+}
+
+.header-section p {
+    font-size: 54px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+/* Định dạng cho phần thông tin cá nhân và câu hỏi */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Định dạng cho phần thông tin cá nhân */
+.personal-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.personal-info label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.personal-info input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Định dạng cho phần câu hỏi và checkbox */
+.question-section {
+    flex: 1;
+}
+
+.question-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.question-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.question-section input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.footer {
+    display: flex;
+    padding: 35px;
+    background-color: #2F2F31;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.footer__logo {
+    width: calc(100% / 3);
+  
+}
+
+.footer__logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo__text {
+    margin-top: 10px;
+    max-width: 100%;
+    color: #FFFFFF;
+
+}
+
+.footer__information {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+.btn__contac {
+    width: 150px;
+    height: 40px;
+    background-color: #E54561;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 15px;
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.email {
+    margin: 10px 0; /* Add margin for spacing */
+    color: #FFFFFF;
+}
+
+.icon {
+    margin: 10px 0; /* Add margin for spacing */
+    font-size: 24px; /* Adjust icon size */
+    color: #FFFFFF;
+}
+
+.icon i {
+    margin: 0 10px; /* Space icons apart */
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-right: 5px;
+}
+
+.nav li {
+    margin: 5px 0; /* Add margin for spacing between items */
+    color: #FFFFFF;
+}
+
+.footer__address {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+
+}
+.footer__address .place{
+    padding:20px;
+    color:#FFFFFF;
+    float: left;
+}
+
+.place {
+    margin-bottom: 10px; /* Add margin for spacing */
+}
+
+.city {
+    display: flex;
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+.city__text {
+    margin-left: 10px; /* Space text from icon */
+    color: #FFFFFF;
+}
+.city i {
+    color: #FFFFFF;
+}
+
